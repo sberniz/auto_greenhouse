@@ -1,0 +1,12 @@
+
+{% block content %}
+<div id="user-info">
+  <h2>Logs</h2>
+  <p>Logs Info</p>
+</div>
+<div id="user-tweets">
+  <span class="stack">{{ logs_content | safe  }}</span>
+</div>
+{% endblock %}
+
+

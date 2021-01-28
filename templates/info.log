@@ -1,0 +1,85 @@
+27-Jan-21 18:20:12 - Lights Turned ON
+27-Jan-21 18:20:22 - Lights Turned OFF
+27-Jan-21 18:23:19 - Lights Turned ON
+27-Jan-21 18:23:19 -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+27-Jan-21 18:23:29 - Lights Turned OFF
+27-Jan-21 18:23:36 - Lights Turned OFF
+27-Jan-21 18:23:37 - 192.168.3.2 - - [27/Jan/2021 18:23:37] "GET /lights/off HTTP/1.1" 200 -
+27-Jan-21 18:23:41 - Lights Turned ON
+27-Jan-21 18:23:41 - 192.168.3.2 - - [27/Jan/2021 18:23:41] "GET /lights/on HTTP/1.1" 200 -
+27-Jan-21 18:23:42 - Lights Turned OFF
+27-Jan-21 18:23:42 - 192.168.3.2 - - [27/Jan/2021 18:23:42] "GET /lights/off HTTP/1.1" 200 -
+27-Jan-21 18:23:45 - 192.168.3.2 - - [27/Jan/2021 18:23:45] "GET /logs HTTP/1.1" 404 -
+27-Jan-21 18:26:14 - Lights Turned ON
+27-Jan-21 18:26:14 -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+27-Jan-21 18:26:15 - 192.168.3.2 - - [27/Jan/2021 18:26:15] "GET /logs HTTP/1.1" 200 -
+27-Jan-21 18:26:24 - Lights Turned OFF
+27-Jan-21 18:26:40 - 192.168.3.2 - - [27/Jan/2021 18:26:40] "GET /logs HTTP/1.1" 200 -
+27-Jan-21 18:26:41 - 192.168.3.2 - - [27/Jan/2021 18:26:41] "GET /logs HTTP/1.1" 200 -
+27-Jan-21 18:26:46 - 192.168.3.2 - - [27/Jan/2021 18:26:46] "GET /logs HTTP/1.1" 200 -
+27-Jan-21 18:33:01 - Lights Turned ON
+27-Jan-21 18:33:01 -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+27-Jan-21 18:33:07 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/auto_greenhouse/main.py", line 116, in logs
+    logs_content = read_file('info.log')
+NameError: name 'read_file' is not defined
+27-Jan-21 18:33:07 - 192.168.3.2 - - [27/Jan/2021 18:33:07] "GET /logs HTTP/1.1" 500 -
+27-Jan-21 18:33:11 - Lights Turned OFF
+27-Jan-21 18:33:14 - Lights Turned OFF
+27-Jan-21 18:33:15 - 192.168.3.2 - - [27/Jan/2021 18:33:15] "GET /lights/off HTTP/1.1" 200 -
+27-Jan-21 18:33:21 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/auto_greenhouse/main.py", line 116, in logs
+    logs_content = read_file('info.log')
+NameError: name 'read_file' is not defined
+27-Jan-21 18:33:21 - 192.168.3.2 - - [27/Jan/2021 18:33:21] "GET /logs HTTP/1.1" 500 -
+27-Jan-21 18:34:19 - Lights Turned ON
+27-Jan-21 18:34:19 -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+27-Jan-21 18:34:21 - Exception on /logs [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/lib/python3/dist-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/lib/python3/dist-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/pi/auto_greenhouse/main.py", line 116, in logs
+    logs_content = read_file('templates/info.log')
+NameError: name 'read_file' is not defined
+27-Jan-21 18:34:21 - 192.168.3.2 - - [27/Jan/2021 18:34:21] "GET /logs HTTP/1.1" 500 -
+27-Jan-21 18:34:28 - Lights Turned OFF
+27-Jan-21 18:34:28 - 192.168.3.2 - - [27/Jan/2021 18:34:28] "GET /lights/off HTTP/1.1" 200 -
+27-Jan-21 18:34:29 - Lights Turned OFF
+27-Jan-21 18:34:32 - Lights Turned OFF
+27-Jan-21 18:34:32 - 192.168.3.2 - - [27/Jan/2021 18:34:32] "GET /lights/off HTTP/1.1" 200 -

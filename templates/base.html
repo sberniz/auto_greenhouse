@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GreenHouse Control</title>
+    <link rel="stylesheet" href="https://unpkg.com/picnic"/>
+  </head>
+  <body>
+<script language="Javascript">
+function open2(url)
+{
+window.open(url,"Camera","height=801, width=800");
+}
+</script>
+    <nav>
+      <a href="/" class="brand"><span>Automatic Grenhouse Control</span></a>
+      <!-- responsive-->
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">Menu</label>
+      <div class="menu">
+        <a href="/lights/{{call}}" class="button {{color }}">{{message_button }}</a>
+        <a href="javascript:open2('http://greenhouse:8765')" class="button">Watch Camera</a>
+        <a href="/logs" target= "_blank" class="button"> View Log </a>
+      </div>
+    </nav>
+    <article class="flex two" style="padding: 3em 1em;">
+      {% block content %}
+      <div>
+        <h1>Plant Watering</h1>
+        <form action="/water_plants" method="post">
+
+          <input style = "width: 65px" type="text" size="4" maxlength="4" id="ml" name="ml"><label for="ml"><strong>ml</strong></label><br />
+          <input type="submit" value="Water Plants">
+        </form>
+      </div>
+      <div>
+
+      {% endblock %}
+    </article>
+
+    <!-- Optional stretch - check out some front-end JavaScript! -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/umbrellajs"/> -->
+  </body>
+</html>
